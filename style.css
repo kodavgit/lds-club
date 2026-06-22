@@ -2,6 +2,7 @@
     --navy:#18223f;
     --navy-dark:#121a30;
     --gold:#d4af37;
+    --gold-dark:#866e1f;
     --gold-light:#f4d67a;
     --white:#ffffff;
     --gray:#f6f7fb;
@@ -16,21 +17,26 @@
 body{
     font-family:'Segoe UI',sans-serif;
     color:#333;
-    line-height:1.7;
+    line-height:2;
 }
 
+.lds-page p {
+    font-size: 18px;
+}
+
+
 .lds-container{
-    width:90%;
+    width:100%;
     max-width:1200px;
     margin:auto;
 }
 
 .lds-section{
-    padding:90px 0;
+    padding:40px 0;
 }
 
 .dark-section{
-    background:var(--navy);
+    background:linear-gradient(rgba(18,26,48,.85),rgba(24,34,63,.9)),url('images/eni2.webp') center/cover;
     color:white;
 }
 
@@ -62,22 +68,17 @@ body{
     justify-content:center;
     text-align:center;
     color:white;
-    background:
-    linear-gradient(rgba(18,26,48,.85),
-    rgba(24,34,63,.9)),
-    url('images/hero-bg.jpg') center/cover;
+    background:linear-gradient(rgba(18,26,48,.85),rgba(24,34,63,.9)),url('images/op-5.jpg') center/cover;
 }
 
 .hero-content{
-    max-width:850px;
-    padding:40px;
+    max-width:990px;
+    padding:20px;
 }
 
 .logo-box img{
     width:150px;
-    height:150px;
     object-fit:contain;
-    margin-bottom:20px;
 }
 
 .club-badge{
@@ -89,8 +90,8 @@ body{
 }
 
 .lds-hero h1{
-    font-size:60px;
-    margin:25px 0;
+    font-size:50px;
+    margin:5px 0;
 }
 
 .hero-btn{
@@ -98,10 +99,17 @@ body{
     margin-top:30px;
     background:var(--gold);
     color:#000;
-    padding:15px 30px;
+    padding:15px 20px;
     text-decoration:none;
-    border-radius:50px;
+    border-radius:5px;
     font-weight:700;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.hero-btn:hover {
+    background:var(--gold-dark);
+    color: #fff;
 }
 
 .about-text{
@@ -128,16 +136,22 @@ body{
 }
 
 .group-card{
-    background:white;
-    color:#333;
+    background: var(--navy);
+    color: var(--gold);
     padding:30px;
+    border: 2px solid var(--gold);
     border-radius:15px;
     transition:.3s;
 }
 
-.group-card:hover{
-    transform:translateY(-8px);
+.group-card p {
+    color: #fff;
 }
+.group-card:hover{
+    transform:translateY(-16px);
+    box-shadow: 15px 15px 15px 5px var(--gold-light);
+}
+
 
 .group-icon{
     font-size:40px;
@@ -156,7 +170,7 @@ body{
 
 .activity-card img{
     width:100%;
-    height:240px;
+    height:340px;
     object-fit:cover;
 }
 
