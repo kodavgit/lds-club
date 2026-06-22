@@ -1,0 +1,231 @@
+:root{
+    --navy:#18223f;
+    --navy-dark:#121a30;
+    --gold:#d4af37;
+    --gold-light:#f4d67a;
+    --white:#ffffff;
+    --gray:#f6f7fb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    color:#333;
+    line-height:1.7;
+}
+
+.lds-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.lds-section{
+    padding:90px 0;
+}
+
+.dark-section{
+    background:var(--navy);
+    color:white;
+}
+
+.section-heading{
+    margin-bottom:50px;
+}
+
+.section-heading span{
+    color:var(--gold);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    font-size:42px;
+    margin-top:10px;
+}
+
+.center{
+    text-align:center;
+}
+
+.lds-hero{
+    min-height:85vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(rgba(18,26,48,.85),
+    rgba(24,34,63,.9)),
+    url('images/hero-bg.jpg') center/cover;
+}
+
+.hero-content{
+    max-width:850px;
+    padding:40px;
+}
+
+.logo-box img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.club-badge{
+    background:var(--gold);
+    color:#000;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:700;
+}
+
+.lds-hero h1{
+    font-size:60px;
+    margin:25px 0;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:var(--gold);
+    color:#000;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.about-text{
+    font-size:18px;
+}
+
+.anthem-card{
+    background:white;
+    border-left:6px solid var(--gold);
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.subgroups-grid,
+.activities-grid,
+.achievement-grid{
+    display:grid;
+    gap:25px;
+}
+
+.subgroups-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.group-card{
+    background:white;
+    color:#333;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.group-card:hover{
+    transform:translateY(-8px);
+}
+
+.group-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.activities-grid{
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+}
+
+.activity-card{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.activity-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.activity-content{
+    padding:25px;
+}
+
+.date{
+    color:var(--gold);
+    font-weight:700;
+}
+
+.gallery-grid{
+    display:grid;
+    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.video-grid{
+    display:grid;
+    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+}
+
+.video-card iframe{
+    width:100%;
+    height:320px;
+    border:none;
+    border-radius:12px;
+}
+
+.achievement-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.achievement-card{
+    text-align:center;
+    padding:40px;
+    background:var(--gray);
+    border-radius:15px;
+}
+
+.achievement-card h3{
+    font-size:50px;
+    color:var(--gold);
+}
+
+@media(max-width:768px){
+
+    .lds-hero h1{
+        font-size:38px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+
+    .video-card iframe{
+        height:250px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+}
