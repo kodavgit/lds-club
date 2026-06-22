@@ -2,7 +2,7 @@
     --navy:#18223f;
     --navy-dark:#121a30;
     --gold:#d4af37;
-    --gold-dark:#866e1f;
+    --gold-dark:#b1922c;
     --gold-light:#f4d67a;
     --white:#ffffff;
     --gray:#f6f7fb;
@@ -105,12 +105,11 @@ body{
     border-radius:5px;
     font-weight:700;
     font-size: 18px;
-    transition: color 0.5s;
+    transition: 0.5s;
 }
 
 .hero-btn:hover {
     background:var(--gold-dark);
-    color: #fff;
 }
 
 .about-text{
@@ -153,10 +152,8 @@ body{
     box-shadow: 15px 15px 15px 5px var(--gold-light);
 }
 
-
-.group-icon{
-    font-size:40px;
-    margin-bottom:15px;
+.group-image img{
+    width: 100%;
 }
 
 .activities-grid{
