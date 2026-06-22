@@ -32,12 +32,13 @@ body{
 }
 
 .lds-section{
-    padding:40px 0;
+    padding:40px 15px;
 }
 
 .dark-section{
-    background:linear-gradient(rgba(18,26,48,.85),rgba(24,34,63,.9)),url('images/eni2.webp') center/cover;
+    background: var(--navy-dark);
     color:white;
+    padding-bottom: 80px;
 }
 
 .section-heading{
@@ -218,6 +219,12 @@ body{
     padding:40px;
     background:var(--gray);
     border-radius:15px;
+    transition: 0.5s;
+}
+.achievement-card:hover{
+    background:var(--navy);
+    color: #fff;
+    transform: translateY(-16px);
 }
 
 .achievement-card h3{
